@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+/* CSS template for Tsubaki's crochet house website */
+body {
+    position: relative; 
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    display: flex; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://lh3.googleusercontent.com/pw/AP1GczMyxpVpOKGvUP5OwCK5vaG-lZeOlAbVWwfyezuF7t952n0q0XIr_4tIOoyWGW3yxMdVuGIS-uSq_j2PVt6NNCNXP5YB56YtMuX54bgC3HrWfaBDy70dHBVO04pksATYlLyWj6yfrWJkWyxsZZczSbDd=w612-h408-s-no?authuser=0");
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.5; 
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: center; /* Horizontally center the items */
+    margin-top: 10px; /* Adjust as needed for vertical alignment */
+}
+
+
+li a{
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: 'Dancing Script';
+    font-size: 22px;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    font-family: 'Dancing Script';
+    margin-left: 20px;
+    text-align: center;
+    font-size: 72px;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    text-shadow: 2px 2px 4px #fff789;
+}
+
+img {
+    max-width: 100%;
+    height: auto; 
+}
+
+p {
+    font-family: 'Caveat';
+    font-size: 36px;
+    padding: 20px;
+}
+
+
+
+.columns-container {
+    display: flex;
+}
+
+.column.side {
+    width: 25%;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.column.middle {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.footer {
+    margin: 0;
+    background-color: 000;
+    text-align: left;
+    color: white;
+}
+
+@media only screen and (max-width: 620px) {
+    .menu, .main, .right{
+    width:"100%";
+}
+}
